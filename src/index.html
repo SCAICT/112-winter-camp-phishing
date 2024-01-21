@@ -1,0 +1,351 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Instagram</title>
+        <link
+            data-default-icon="https://static.cdninstagram.com/rsrc.php/v3/yI/r/VsNE-OHk_8a.png"
+            rel="icon"
+            sizes="192x192"
+            href="https://static.cdninstagram.com/rsrc.php/v3/yI/r/VsNE-OHk_8a.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="https://static.cdninstagram.com/rsrc.php/v3/yR/r/lam-fZmwmvn.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="https://static.cdninstagram.com/rsrc.php/v3/yx/r/H1l_HHqi4p6.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="167x167"
+            href="https://static.cdninstagram.com/rsrc.php/v3/yB/r/-7Z_RkdLJUX.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="https://static.cdninstagram.com/rsrc.php/v3/yG/r/De-Dwpd5CHc.png"
+        />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                    sans-serif;
+            }
+            main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-block: 32px;
+                height: 760px;
+            }
+
+            #image {
+                width: 380.32px;
+                margin-right: 32px;
+                margin-bottom: 12px;
+                height: 581.15px;
+                background-image: url("static/home-phones.png");
+                background-size: 468.32px 634.15px;
+                background-position: -46px 0;
+                position: relative;
+            }
+            #image img {
+                position: absolute;
+                left: 112px;
+                top: 27px;
+                width: 250px;
+                height: 538.84px;
+                transition: opacity 2s ease-in-out;
+            }
+            #login {
+                margin-top: 12px;
+                width: 350px;
+                height: 716px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .box {
+                border: 1px solid #dbdbdb;
+                padding: 10px 0;
+                margin: 0 0 10px;
+            }
+            #logo {
+                display: block;
+                width: 174px;
+                margin: 36px auto;
+            }
+            .download {
+                display: flex;
+                justify-content: center;
+                gap: 8px;
+            }
+            .download img {
+                height: 40px;
+            }
+            label {
+                display: flex;
+                border: solid 1px #dbdbdb;
+                background: #fafafa;
+                border-radius: 3px;
+                margin: 0 40px 10px;
+                position: relative;
+                height: 36px;
+            }
+            label:has(input:focus) {
+                border: solid 1px #65676b;
+            }
+            input {
+                display: block;
+                width: 100%;
+                border: none;
+                font-weight: 300;
+                padding: 14px 0 2px 8px;
+                background-color: transparent;
+            }
+            input:focus {
+                outline: none;
+            }
+            span {
+                display: block;
+                position: absolute;
+                color: rgb(115, 115, 115);
+                left: 4.5px;
+                top: 4px;
+                font-size: 11px;
+                user-select: none;
+            }
+            input[type="submit"] {
+                background-color: #0095f6;
+                width: 268px;
+                height: 32px;
+                margin-block: 9px;
+                border: none;
+                border-radius: 8px;
+                color: #fff;
+                font-weight: 600;
+                padding: 7px 16px;
+                cursor: pointer;
+                margin: auto;
+            }
+            input[type="submit"]:hover {
+                background-color: rgb(24, 119, 242);
+            }
+            p {
+                text-align: center;
+                font-size: 15px;
+                margin: 14px;
+            }
+            .facebook {
+                color: rgb(56, 81, 133);
+                text-decoration: none;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .facebook img {
+                margin-right: 8px;
+                width: 16px;
+            }
+            button {
+                border: none;
+                background: transparent;
+                color: #000000;
+                font-weight: 600;
+                cursor: pointer;
+                white-space: nowrap;
+                padding-right: 8px;
+                font-size: 15px;
+            }
+            .or-box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 268px;
+                margin: 16px auto 18px;
+                gap: 18px;
+                font-size: 14px;
+            }
+            .line {
+                width: 100%;
+                height: 1px;
+                background-color: #dbdbdb;
+            }
+            .forgot {
+                font-size: 14px;
+                color: rgb(0, 55, 107);
+            }
+            .no-account a {
+                color: rgb(0, 149, 246);
+                font-weight: 700;
+                text-decoration: none;
+            }
+            .dowonload p {
+                margin-top: 10px;
+            }
+            footer {
+                text-align: center;
+                font-size: 13px;
+            }
+            footer div {
+                margin-block: 12px;
+            }
+            footer,
+            footer a {
+                color: rgb(115, 115, 115);
+                text-decoration: none;
+            }
+            .links {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+            svg {
+                transform: rotate(180deg);
+                margin-right: 10px;
+            }
+            .no-account p {
+                margin-block: 10px;
+            }
+            @media (max-width: 780px) {
+                #image {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <section id="image">
+                <img src="static/screenshot1.png" alt="" />
+                <img src="static/screenshot2.png" alt="" />
+                <img src="static/screenshot3.png" alt="" />
+                <img src="static/screenshot4.png" alt="" />
+            </section>
+            <section id="login">
+                <form action="login" method="POST" class="box">
+                    <img src="static/logo.png" alt="" id="logo" />
+                    <label for="username">
+                        <span>手機號碼、用戶名稱或電子郵件地址</span>
+                        <input
+                            aria-required="true"
+                            autocapitalize="none"
+                            autocorrect="off"
+                            maxlength="75"
+                            type="text"
+                            name="username"
+                            id="username"
+                        />
+                    </label>
+                    <label for="password">
+                        <span>密碼</span>
+                        <input type="password" name="password" id="password" />
+                        <button type="button" onclick="show()">顯示</button>
+                    </label>
+                    <input type="submit" value="登入" />
+                    <div class="or-box">
+                        <div class="line"></div>
+                        或
+                        <div class="line"></div>
+                    </div>
+                    <p>
+                        <a href="" class="facebook"
+                            ><img src="static/fb.png" alt="" />使用 Facebook
+                            帳號登入</a
+                        >
+                    </p>
+                    <p class="forgot">忘記密碼？</p>
+                </form>
+                <div class="box no-account">
+                    <p>沒有帳號嗎？<a href="signup.php">註冊</a></p>
+                </div>
+                <div class="dowonload">
+                    <p>下載應用程式。</p>
+                    <div class="download">
+                        <a href="">
+                            <img src="static/google_play.png" alt="" />
+                        </a>
+                        <a href="">
+                            <img src="static/microsoft_store.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="links">
+                <a href=""> Meta</a>
+                <a href="">關於</a>
+                <a href="">部落格</a>
+                <a href="">工作機會</a>
+                <a href="">使用說明</a>
+                <a href="">API</a>
+                <a href="">隱私</a>
+                <a href="">使用條款</a>
+                <a href="">地點</a>
+                <a href="">Instagram Lite</a>
+                <a href="">Threads</a>
+                <a href="">聯絡人上傳和非用戶</a>
+                <a href="">Meta 驗證</a>
+            </div>
+            <div>
+                中文(台灣)
+                <svg
+                    aria-label="向下雙箭頭圖示"
+                    class="x1lliihq x1n2onr6 x1roi4f4"
+                    fill="currentColor"
+                    height="12"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    width="12"
+                >
+                    <title>向下雙箭頭圖示</title>
+                    <path
+                        d="M21 17.502a.997.997 0 0 1-.707-.293L12 8.913l-8.293 8.296a1 1 0 1 1-1.414-1.414l9-9.004a1.03 1.03 0 0 1 1.414 0l9 9.004A1 1 0 0 1 21 17.502Z"
+                    ></path>
+                </svg>
+                © 2024Instagram from Meta
+            </div>
+        </footer>
+        <script>
+            const show = () => {
+                var x = document.getElementById("password");
+                var y = document.querySelector("button");
+                if (x.type === "password") {
+                    x.type = "text";
+                    y.innerHTML = "隱藏";
+                } else {
+                    x.type = "password";
+                    y.innerHTML = "顯示";
+                }
+            };
+
+            const image = document.querySelectorAll("#image img");
+            let imageNumber = 0;
+            const changeImage = () => {
+                if (imageNumber == 4) {
+                    imageNumber = 0;
+                }
+                imageNumber++;
+                image.forEach((item) => {
+                    item.style.opacity = 0;
+                });
+                image[imageNumber - 1].style.opacity = 1;
+            };
+            setInterval(changeImage, 5000);
+        </script>
+    </body>
+</html>
