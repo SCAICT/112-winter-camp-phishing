@@ -2,7 +2,10 @@
 
 知資為資知 - 2024中電會聯合寒訓
 
+By [毛哥EM](https://github.com/Edit-Mr)
+
 ![](demo.gif)
+
 ## 如何運行
 確保你已經安裝了 Node.js。下載或克隆此存儲庫。
 
